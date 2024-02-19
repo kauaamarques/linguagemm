@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 3%;
+}
+
+.logo img{
+    width: 220px;
+    height: 180px;
+    margin-top: -9%;
+    
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(224, 222, 220);
+    font-family: sans-serif;
+    background-color: #0f0f0f;
+}
+
+h1, h2{
+    font-weight: 800;
+    color: rgb(4, 100, 145)
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    display: block;
+    background: #0f0f0f;
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+    animation: surgir 3s ease-out;
+    animation-timeline: view();
+    animation-range: cover 0 cover 50%;
+}
+
+section.modulo p{
+    margin-bottom: 40px;
+    text-align: justify;
+    font-size: 1.4em;
+}
+
+section.modulo h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+section.modulo.content {
+    padding: 40px 0;
+   background: #000000;
+}
+
+section.modulo.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.modulo.parallax h1{
+    color: #ffffff;
+    text-shadow: 5px 5px 5px black;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 50;
+}
+
+section.modulo.parallax:after {
+ content: "";
+ height: 100%;
+ width: 100%;
+ position: absolute;
+ z-index: 10;
+ background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%  );
+
+}
+
+
+
+section.modulo.parallax-1{
+    background-image: url(https://apexensino.com.br/wp-content/uploads/2020/05/python.jpg);
+}
+section.modulo.parallax-2{
+    background-image: url(https://images.prismic.io/voitto-blog/32d086d5-c173-4d47-b5fc-c952b2464add_o+que+%C3%A9+javascript.jpg);
+}
+
+section.modulo.parallax-3{
+    background-image: url(https://www.finoit.com/wp-content/uploads/2022/09/history-of-java-programming-language.jpg);
+}
+section.modulo.parallax-4{
+    background-image: url(https://www.freecodecamp.org/news/content/images/2022/07/Untitled-2-1.jpg);
+}
+section.modulo.parallax-5{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCeseQnBd4dcr-ZZLF6UUiKlhvUI9tFfX0IA&usqp=CAU);
+}
+section.modulo.parallax-6{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV-DSYgaLybwA2BgnFnFRzAVOJc6HsahFh0w&usqp=CAU);
+}
+
+
+
+@keyframes surgir {
+    from{
+       opacity: 0;
+       translate: -100vw 0;
+    }
+
+    to{
+        opacity: 1;
+        translate: 0 0 ;
+    }
+}
+
+ @media all and (max-width: 760px){
+
+    section.modulo p{
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    section.modulo.parallax h1{
+        font-size: 1.5em;
+    }
+
+    section.modulo.content{
+        width: 90%;
+       background-color: #0f0f0f; 
+    }
+}
+
